@@ -9,8 +9,9 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.quit()
 
     def test_can_start_a_list_and_retrieve_it_later(self):
-        browser.get('http://localhost:8000')
-        self.assertIsIn('To-Do', self.browser.title)
+        self.browser.get('http://localhost:3000')
+        self.assertIn('To-Do', self.browser.title)
+        print('Browser title is %s' % self.browser.title)
         self.fail('Finish the test')
 
 
